@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Code Relics is an interactive museum of source code that changed how programmers think."
+    />
+    <meta name="theme-color" content="#08090b" />
+    <meta property="og:title" content="Code Relics — An interactive museum of legendary source code" />
+    <meta
+      property="og:description"
+      content="Step inside Quake III's legendary fast inverse square root and watch the magic number work."
+    />
+    <title>Code Relics — The code that changed how we think</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%2308090b%22/><path d=%22M16 20h32v24H16z%22 fill=%22none%22 stroke=%22%23e4ff57%22 stroke-width=%224%22/><path d=%22m23 28 7 4-7 4m10 0h8%22 fill=%22none%22 stroke=%22%23ff6b35%22 stroke-width=%224%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#artifact">Skip to the exhibit</a>
+    <div class="page-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Code Relics home">
+        <span class="brand-mark" aria-hidden="true">⌁</span>
+        <span>CODE RELICS</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#exhibits">Exhibits</a>
+        <a href="#artifact">Artifact 001</a>
+        <a href="#lab">Lab</a>
+      </nav>
+      <a
+        class="source-link"
+        href="https://github.com/zhbchao/code-relics"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Source ↗
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="eyebrow reveal">
+          <span>Museum status</span>
+          <span class="status-dot"></span>
+          <span>Open</span>
+          <span class="eyebrow-rule"></span>
+          <span>Est. 2026</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-kicker reveal">Some code solves a problem.</p>
+          <h1 id="hero-title" class="reveal">
+            Some code changes<br />
+            <em>how we think.</em>
+          </h1>
+          <p class="hero-intro reveal">
+            An interactive museum dedicated to the small, strange, and brilliant
+            fragments of source code that became part of computing folklore.
+          </p>
+          <a class="enter-button reveal" href="#artifact">
+            <span>Enter the first exhibit</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="relic-stage reveal" aria-label="The hexadecimal constant 0x5f3759df">
+          <div class="stage-orbit orbit-one"></div>
+          <div class="stage-orbit orbit-two"></div>
+          <div class="relic-plaque">
+            <span>Artifact 001</span>
+            <strong>0x5f3759df</strong>
+            <small>Quake III Arena · 1999</small>
+          </div>
+          <div class="relic-shadow"></div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Scroll to descend</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="manifesto section-shell" aria-label="Museum manifesto">
+        <p class="section-index">00 / MANIFESTO</p>
+        <blockquote class="reveal">
+          “The best code is not always the cleanest code. Sometimes it is a precise
+          answer to a machine, a moment, and a constraint that no longer exists.”
+        </blockquote>
+        <div class="manifesto-meta reveal">
+          <p>
+            Code Relics preserves those answers—not as static plaques, but as living
+            machines you can inspect, alter, and run.
+          </p>
+          <div class="manifesto-counts">
+            <span><strong>01</strong> open exhibit</span>
+            <span><strong>02</strong> under restoration</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="exhibits" class="collection section-shell" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <p class="section-index">01 / COLLECTION</p>
+          <h2 id="collection-title" class="reveal">The permanent collection</h2>
+          <p class="reveal">
+            Three systems. Three different kinds of elegance. One is now open for
+            inspection.
+          </p>
+        </div>
+
+        <div class="exhibit-grid">
+          <a class="exhibit-card exhibit-live reveal" href="#artifact">
+            <div class="card-topline">
+              <span>001</span>
+              <span class="live-label">Now showing</span>
+            </div>
+            <div class="card-glyph magic-glyph" aria-hidden="true">
+              <span>5f</span><span>37</span><span>59</span><span>df</span>
+            </div>
+            <div>
+              <p>Quake III Arena</p>
+              <h3>Fast inverse square root</h3>
+              <span class="card-tag">BIT HACK · NUMERICAL METHODS · C</span>
+            </div>
+          </a>
+
+          <article class="exhibit-card reveal">
+            <div class="card-topline">
+              <span>002</span>
+              <span>In restoration</span>
+            </div>
+            <div class="card-glyph bsp-glyph" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div>
+              <p>Doom</p>
+              <h3>The world, split in two</h3>
+              <span class="card-tag">BSP TREES · RENDERING · C</span>
+            </div>
+          </article>
+
+          <article class="exhibit-card reveal">
+            <div class="card-topline">
+              <span>003</span>
+              <span>In restoration</span>
+            </div>
+            <div class="card-glyph git-glyph" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div>
+              <p>Git</p>
+              <h3>Everything is an object</h3>
+              <span class="card-tag">HASHES · DAGs · CONTENT ADDRESSING</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="artifact" class="artifact-intro" aria-labelledby="artifact-title">
+        <div class="artifact-rail" aria-hidden="true">
+          <span>ARTIFACT 001</span>
+          <i></i>
+          <span>Q_rsqrt</span>
+        </div>
+        <div class="artifact-title-block section-shell">
+          <p class="section-index">02 / ARTIFACT 001</p>
+          <p class="artifact-date reveal">id Tech 3 · C · circa 1999</p>
+          <h2 id="artifact-title" class="reveal">
+            The number that<br />
+            <em>shouldn’t work.</em>
+          </h2>
+          <p class="artifact-lede reveal">
+            Quake III needed to normalize millions of vectors. Square roots and
+            division were expensive. This function found another way.
+          </p>
+        </div>
+
+        <div class="code-vault section-shell reveal">
+          <div class="vault-header">
+            <div>
+              <span class="vault-light red"></span>
+              <span class="vault-light amber"></span>
+              <span class="vault-light green"></span>
+            </div>
+            <span>q_math.c · preserved fragment</span>
+            <button id="copy-code" type="button">Copy</button>
+          </div>
+          <pre aria-label="Core fast inverse square root code"><code><span class="code-muted">float</span> <span class="code-name">Q_rsqrt</span>(<span class="code-muted">float</span> number) {
+  <span class="code-muted">long</span> i;
+  <span class="code-muted">float</span> x2, y;
+
+  x2 = number * <span class="code-number">0.5F</span>;
+  y  = number;
+  <mark data-code-stage="bits">i  = *(<span class="code-muted">long</span> *)&amp;y;</mark>
+  <mark data-code-stage="magic">i  = <span class="code-number">0x5f3759df</span> - (i &gt;&gt; <span class="code-number">1</span>); <span class="code-comment">// what the fuck?</span></mark>
+  <mark data-code-stage="guess">y  = *(<span class="code-muted">float</span> *)&amp;i;</mark>
+  <mark data-code-stage="newton">y  = y * (<span class="code-number">1.5F</span> - (x2 * y * y));</mark>
+
+  <span class="code-muted">return</span> y;
+}</code></pre>
+          <p class="vault-note">
+            Educational excerpt. View the
+            <a
+              href="https://github.com/id-Software/Quake-III-Arena/blob/master/code/game/q_math.c"
+              target="_blank"
+              rel="noreferrer"
+            >original GPL source ↗</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="story section-shell" aria-labelledby="story-title">
+        <div class="section-heading compact">
+          <p class="section-index">03 / INSIDE THE MACHINE</p>
+          <h2 id="story-title" class="reveal">Four moves. One beautiful cheat.</h2>
+        </div>
+
+        <div class="story-layout">
+          <div class="story-steps">
+            <button class="story-step active reveal" type="button" data-stage="bits">
+              <span>01</span>
+              <div>
+                <h3>Forget that it is a number</h3>
+                <p>
+                  Read the same 32 bits as an integer. IEEE-754 has already arranged
+                  the exponent in a form that resembles a logarithm.
+                </p>
+              </div>
+            </button>
+            <button class="story-step reveal" type="button" data-stage="magic">
+              <span>02</span>
+              <div>
+                <h3>Subtract from the magic constant</h3>
+                <p>
+                  Halving the bit pattern and subtracting it from
+                  <code>0x5f3759df</code> approximates “negative one half” in
+                  logarithmic space.
+                </p>
+              </div>
+            </button>
+            <button class="story-step reveal" type="button" data-stage="guess">
+              <span>03</span>
+              <div>
+                <h3>Call the bits a float again</h3>
+                <p>
+                  The transformed bit pattern is reinterpreted as a floating-point
+                  number: a rough, extremely cheap estimate of 1/√x.
+                </p>
+              </div>
+            </button>
+            <button class="story-step reveal" type="button" data-stage="newton">
+              <span>04</span>
+              <div>
+                <h3>Let Newton clean up the crime scene</h3>
+                <p>
+                  One Newton–Raphson iteration collapses most of the remaining error
+                  while keeping the whole routine fast.
+                </p>
+              </div>
+            </button>
+          </div>
+
+          <div class="story-display reveal" aria-live="polite">
+            <p id="story-display-label">MOVE 01 · BIT REINTERPRETATION</p>
+            <div id="story-display-visual" class="bit-sculpture">
+              <span class="bit-sign">0</span>
+              <span class="bit-exponent">01111111</span>
+              <span class="bit-mantissa">00000000000000000000000</span>
+            </div>
+            <div class="display-legend">
+              <span><i class="sign-color"></i> Sign</span>
+              <span><i class="exponent-color"></i> Exponent</span>
+              <span><i class="mantissa-color"></i> Mantissa</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="lab" aria-labelledby="lab-title">
+        <div class="section-shell">
+          <div class="section-heading lab-heading">
+            <div>
+              <p class="section-index">04 / LIVE LAB</p>
+              <h2 id="lab-title" class="reveal">Touch the artifact.</h2>
+            </div>
+            <p class="reveal">
+              Choose any positive number. We will push it through the exact bit-level
+              trick and expose every intermediate state.
+            </p>
+          </div>
+
+          <div class="lab-console reveal">
+            <div class="lab-controls">
+              <label for="number-input">Input number</label>
+              <div class="number-control">
+                <input
+                  id="number-input"
+                  type="number"
+                  min="0.000001"
+                  max="1000000"
+                  step="any"
+                  value="42"
+                />
+                <span>x</span>
+              </div>
+              <label class="sr-only" for="number-range">Input number on a logarithmic scale</label>
+              <input
+                id="number-range"
+                class="range"
+                type="range"
+                min="-6"
+                max="6"
+                step="0.01"
+                value="1.623249"
+              />
+              <div class="range-labels" aria-hidden="true">
+                <span>10⁻⁶</span><span>1</span><span>10⁶</span>
+              </div>
+              <div class="presets" aria-label="Example values">
+                <button type="button" data-value="0.01">0.01</button>
+                <button type="button" data-value="1">1</button>
+                <button type="button" data-value="42" class="active">42</button>
+                <button type="button" data-value="10000">10,000</button>
+              </div>
+            </div>
+
+            <div class="lab-results">
+              <article>
+                <span>TRUE 1 / √x</span>
+                <strong id="true-result">0.154303</strong>
+                <small>REFERENCE</small>
+              </article>
+              <article class="result-initial">
+                <span>BIT HACK ESTIMATE</span>
+                <strong id="initial-result">0.154411</strong>
+                <small id="initial-error">0.0700% ERROR</small>
+              </article>
+              <article class="result-final">
+                <span>AFTER NEWTON</span>
+                <strong id="refined-result">0.154303</strong>
+                <small id="refined-error">0.0001% ERROR</small>
+              </article>
+            </div>
+
+            <div class="bit-inspector">
+              <div class="inspector-heading">
+                <span>32-bit float anatomy</span>
+                <span id="input-hex">0x42280000</span>
+              </div>
+              <div id="input-bits" class="bits-row" aria-label="Input IEEE-754 bits"></div>
+              <div class="inspector-meta">
+                <span>Sign <strong id="input-sign">0</strong></span>
+                <span>Exponent <strong id="input-exponent">132 (5)</strong></span>
+                <span>Mantissa <strong id="input-mantissa">0x280000</strong></span>
+              </div>
+              <div class="transform-arrow">
+                <span>i = 0x5f3759df − (i » 1)</span>
+                <i></i>
+              </div>
+              <div class="inspector-heading">
+                <span>Transformed estimate</span>
+                <span id="magic-hex">0x3e2379df</span>
+              </div>
+              <div id="magic-bits" class="bits-row" aria-label="Transformed IEEE-754 bits"></div>
+            </div>
+
+            <div class="error-chart-panel">
+              <div>
+                <span>Error across twelve orders of magnitude</span>
+                <div class="chart-legend">
+                  <span><i class="initial-line"></i> Initial guess</span>
+                  <span><i class="refined-line"></i> After Newton</span>
+                </div>
+              </div>
+              <canvas id="error-chart" aria-label="Relative error chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="perspective section-shell" aria-labelledby="perspective-title">
+        <p class="section-index">05 / CONSERVATOR'S NOTE</p>
+        <div class="perspective-grid">
+          <h2 id="perspective-title" class="reveal">Brilliant then.<br />A warning now.</h2>
+          <div class="reveal">
+            <p>
+              On late-1990s hardware, avoiding a square root and division could matter.
+              Today, CPUs expose dedicated instructions and compilers understand the
+              operation. The original pointer casts also violate modern strict-aliasing
+              rules and assume a 32-bit <code>long</code>.
+            </p>
+            <p>
+              The relic is not a recipe to copy blindly. It is a lesson in reading the
+              machine beneath the language—and in measuring the trade-off that mattered
+              at the time.
+            </p>
+          </div>
+        </div>
+        <div class="then-now reveal">
+          <div>
+            <span>THEN</span>
+            <strong>Exploit representation</strong>
+            <p>Trade a small amount of precision for a large speed gain.</p>
+          </div>
+          <div class="then-now-divider" aria-hidden="true">→</div>
+          <div>
+            <span>NOW</span>
+            <strong>Express intent, then measure</strong>
+            <p>Use modern intrinsics or standard math and trust the benchmark.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="provenance" aria-labelledby="provenance-title">
+        <div class="section-shell provenance-inner">
+          <div>
+            <p class="section-index">06 / PROVENANCE</p>
+            <h2 id="provenance-title" class="reveal">Every relic needs a record.</h2>
+          </div>
+          <dl class="reveal">
+            <div><dt>Known from</dt><dd>Quake III Arena GPL source release</dd></div>
+            <div><dt>Source file</dt><dd>code/game/q_math.c</dd></div>
+            <div><dt>Released</dt><dd>August 2005 under GPL-2.0-or-later</dd></div>
+            <div><dt>Authorship</dt><dd>Predates Quake III; attribution remains nuanced</dd></div>
+          </dl>
+          <a
+            class="archive-button reveal"
+            href="https://github.com/id-Software/Quake-III-Arena"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit the original archive <span>↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-mark" aria-hidden="true">⌁</div>
+      <p>CODE RELICS</p>
+      <p>Machines fade. Good ideas remain.</p>
+      <div>
+        <a href="https://github.com/zhbchao/code-relics">GitHub</a>
+        <a href="#top">Return to entrance ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
